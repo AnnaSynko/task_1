@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма для тесту</title>
+  </head>
+  <body>
+    <nav><a href="index.html"> Головна сторінка </a></nav>
+    <br />
+    <form method="POST" action="https://formspree.io/anna46075@gmail.com">
+      <label> Ім'я: <input type="text" placeholder="ваше ім'я" /> </label>
+      <label>
+        Прізвище: <input type="text" placeholder="ваше прізвище" />
+      </label>
+      <label> Пошта: <input type="email" placeholder="ваша пошта" /> </label>
+      <br />
+      <p> 1. Завдяки чиїм старанням виникла дана порода:</p>
+      <select name="menu" size="1">
+        <option value="first">Жанни Міль</option>
+        <option selected="selected" value="second">Жанни Дарк</option>
+        <option value="third">Хлої Мелер</option>
+        <option value="fourth">Марії Головиної</option>
+      </select>
+      <p> 2. Які хвороби можуть виникати у бенгальськіх котів:</p>
+      <select id="groups" name="groups">
+        <optgroup label="спадкові">
+          <option>відказ задніх ніг</option>
+        </optgroup>
+        <optgroup label="набуті">
+          <option>лейкемія</option> <option>харчові отруєння</option>
+          <option>гастрит</option>
+        </optgroup>
+      </select>
+      <p> 3. Годувати бенгальця можна:</p>
+      <select name="menu" size="3" multiple="multiple">
+        <option value="first">Сухим готовим кормом</option>
+        <option selected="selected" value="second">Кашею</option>
+        <option value="third">Рибою</option>
+        <option value="fourth">Бананами</option>
+      </select>
+      <p> 4. Бенгальська кішка це дорога порода?</p>
+      <label>
+        <input type="radio" name="answer-question" value="yes" /> так
+      </label>
+      <label>
+        <input type="radio" name="answer-question" value="no" /> ні
+      </label>
+      <p>5. Скільки років живуть бенгальці?</p>
+      <input type="checkbox" name="year" checked="checked" />2-5<br />
+      <input type="checkbox" name="year" /> 7-10<br />
+      <input type="checkbox" name="year" /> 12-15<br />
+      <input type="checkbox" name="year" /> 8-10<br />
+
+      <br />
+      <input type="submit" value="Надіслати" />
+    </form>
+  </body>
+</html>
